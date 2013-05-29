@@ -18,6 +18,12 @@ set listchars=tab:▸\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
+" Activate spell checking \s
+nmap <silent> <leader>s :set spell!<CR>
+
+" Set to my region Australia
+set spelllang=en_au
+
 " Source the vimrc file after saving it
 if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
@@ -60,7 +66,7 @@ endfunction
 " to include extra files types that I work with.
 if has("autocmd")
   " Enable file type detection
-  filetype on
+  filetype plugin indent on
    
   " Syntax of these languages is fussy over tabs Vs spaces
   autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
