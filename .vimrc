@@ -4,6 +4,7 @@ set history=700		" Sets how many lines of history VIM has to remember
 " colo delek
 color blackboard	" This is a file that exists in ~/.vim/colors/blackboard.vim
 syntax on		" Turn on syntax highliting
+set nocompatible
 
 set number
 set backupdir=~/vim/tmp/	" Place to put backups, create directory first.
