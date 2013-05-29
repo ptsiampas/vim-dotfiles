@@ -1,3 +1,4 @@
+call pathogen#infect()
 set history=700		" Sets how many lines of history VIM has to remember
 
 " colo delek
@@ -7,7 +8,6 @@ syntax on		" Turn on syntax highliting
 set number
 set backupdir=~/vim/tmp/	" Place to put backups, create directory first.
 set backup
-set nowrap
 
 " Show invisibles macros.. that I just LOVE!
 nmap <leader>l :set list!<CR>
